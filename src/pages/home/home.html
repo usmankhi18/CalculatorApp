@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Calculator
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+  <ion-row>
+    <ion-col col-6>
+       Enter Number: <input type="number" [(ngModel)]="param1"/>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6>
+      Enter Number: <input type="number" [(ngModel)]="param2"/>
+     </ion-col>
+  </ion-row>
+  
+ 
+  
+ <ion-label>Answer :  {{answer}}</ion-label>
+  
+ <button ion-button color="secondary" (click)=add() round full>+</button>
+ <button ion-button color="secondary" (click)=substract() round full>-</button>
+ <button ion-button color="secondary" (click)=divide() round full>/</button>
+ <button ion-button color="secondary" (click)=multiply() round full>*</button>
+</ion-content>
